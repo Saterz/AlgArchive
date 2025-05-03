@@ -17,7 +17,6 @@
 		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@tailwindcss/forms": "^0.5.9",
@@ -35,6 +34,7 @@
 	},
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^5.7.1",
 		"drizzle-orm": "^0.40.0",
 		"postgres": "^3.4.5"
 	}
