@@ -4,6 +4,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	let { children } = $props();
+
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	injectAnalytics();
 </script>
 
 <Navbar />
