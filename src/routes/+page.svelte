@@ -1,4 +1,3 @@
-<!-- src/routes/+page.svelte -->
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
@@ -10,10 +9,8 @@
 	}
 </script>
 
-<!-- ========== HERO ========= -->
 <section class="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 pt-24 pb-32">
 	<div class="absolute inset-x-0 -top-40 -z-10 opacity-30 blur-3xl">
-		<!-- squiggly gradient blob -->
 		<div
 			class="aspect-square w-full rotate-45 rounded-3xl bg-gradient-to-tr from-indigo-500 via-sky-500 to-emerald-400"
 		></div>
@@ -49,7 +46,6 @@
 	</div>
 </section>
 
-<!-- ========== STATS ========= -->
 <section class="bg-white py-20">
 	<div class="mx-auto grid max-w-6xl gap-12 px-4 text-center sm:grid-cols-2 lg:grid-cols-4">
 		<div>
@@ -71,19 +67,16 @@
 	</div>
 </section>
 
-<!-- ========== FEATURES ========= -->
 <section class="bg-gray-50 py-24">
 	<div class="mx-auto max-w-6xl px-4">
 		<h2 class="mb-16 text-center text-3xl font-bold md:text-4xl">Why AlgArchive?</h2>
 
 		<div class="grid gap-16 lg:grid-cols-3">
-			<!-- Feature 1 -->
 			<div class="px-6 text-center">
 				<div
 					class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full
                             bg-indigo-600 text-white"
 				>
-					<!-- cube icon -->
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-width="2"
@@ -100,13 +93,11 @@
 				</p>
 			</div>
 
-			<!-- Feature 2 -->
 			<div class="px-6 text-center">
 				<div
 					class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full
                             bg-sky-500 text-white"
 				>
-					<!-- stopwatch icon -->
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-width="2"
@@ -123,13 +114,11 @@
 				</p>
 			</div>
 
-			<!-- Feature 3 -->
 			<div class="px-6 text-center">
 				<div
 					class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full
                             bg-emerald-500 text-white"
 				>
-					<!-- share icon -->
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-width="2"
@@ -148,7 +137,6 @@
 	</div>
 </section>
 
-<!-- ========== CALL-TO-ACTION ========= -->
 <section class="bg-indigo-600 py-24">
 	<div class="mx-auto max-w-5xl px-4 text-center text-white">
 		<h2 class="text-4xl font-extrabold md:text-5xl">Ready to level up your solve?</h2>
