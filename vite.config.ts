@@ -11,5 +11,11 @@ export default defineConfig({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide'
 		})
-	]
+	],
+	server: {
+		fs: {
+		  // Allow serving files from one level up to the project root
+		  allow: ['..'],
+		},
+	  },
 });

@@ -27,7 +27,11 @@
 			{/each}
 		</ul>
 
-		<a href="/" class="font-boxing mx-auto text-4xl">AlgArchive</a>
+		<a href="/" class="font-boxing mx-auto flex flex-row items-center text-4xl"
+			><img src="/AlgArchive.png" alt="AlgArchive logo" class="h-28 w-28" />
+			<p class="text-indigo-600">Alg</p>
+			Archive</a
+		>
 
 		<div class="flex items-center justify-end space-x-10">
 			<ul class="hidden items-center space-x-10 font-medium text-gray-900 md:flex">
@@ -40,8 +44,8 @@
 
 			<button
 				onclick={onStart}
-				class="rounded-full bg-gray-900 px-6 py-2 font-semibold text-white
-                       transition hover:bg-gray-700 cursor-pointer"
+				class="cursor-pointer rounded-full bg-gray-900 px-6 py-2 font-semibold
+                       text-white transition hover:bg-gray-700"
 			>
 				Get&nbsp;started
 			</button>
