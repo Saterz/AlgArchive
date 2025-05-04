@@ -22,16 +22,15 @@
 				<ul class="space-y-4">
 					<li>
 						<a
-							href="https://discord.gg/your-discord"
+							href="https://discord.gg/NYPG43xe9t"
 							target="_blank"
 							rel="noopener"
 							class="hover:text-neutral-800">Discord</a
 						>
 					</li>
-					<li><a href="/blog" class="hover:text-neutral-800">Blog</a></li>
 					<li>
 						<a
-							href="https://github.com/yourrepo"
+							href="https://github.com/Saterz/AlgArchive/"
 							target="_blank"
 							rel="noopener"
 							class="hover:text-neutral-800">GitHub</a
