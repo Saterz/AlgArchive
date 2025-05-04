@@ -13,7 +13,7 @@
 				<ul class="space-y-4">
 					<li><a href="/" class="hover:text-neutral-800">Home</a></li>
 					<li><a href="/browse" class="hover:text-neutral-800">Browse</a></li>
-					<li><a href="/submit" class="hover:text-neutral-800">Submit an Alg</a></li>
+					<li><a href="/submit" class="hover:text-neutral-800">Submit</a></li>
 				</ul>
 			</div>
 

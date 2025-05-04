@@ -4,8 +4,7 @@
 	const leftLinks = [
 		{ href: '/browse', label: 'Browse' },
 		{ href: '/submit', label: 'Submit' },
-		{ href: '/learn', label: 'Learn' },
-		{ href: '/community', label: 'Community' }
+		{ href: '/learn', label: 'Learn' }
 	];
 
 	const rightLinks = [
