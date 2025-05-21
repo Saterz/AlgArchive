@@ -129,6 +129,6 @@
                    transition hover:bg-indigo-50"
 		>
 			Get started
-		</button>
+	</button>
 	</div>
 </section>
