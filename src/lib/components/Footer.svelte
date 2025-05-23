@@ -13,7 +13,7 @@
 				<ul class="space-y-4">
 					<li><a href="/" class="hover:text-neutral-800">Home</a></li>
 					<li><a href="/browse" class="hover:text-neutral-800">Browse</a></li>
-					<li><a href="/submit" class="hover:text-neutral-800">Submit</a></li>
+					<li><a href="https://tally.so/r/wQyqEA" class="hover:text-neutral-800">Submit</a></li>
 				</ul>
 			</div>
 
@@ -44,7 +44,6 @@
 				<ul class="space-y-4">
 					<li><a href="/terms" class="hover:text-neutral-800">Terms</a></li>
 					<li><a href="/privacy" class="hover:text-neutral-800">Privacy</a></li>
-					<li><a href="/cookies" class="hover:text-neutral-800">Cookies</a></li>
 				</ul>
 			</div>
 		</div>

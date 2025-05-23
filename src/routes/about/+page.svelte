@@ -35,9 +35,5 @@
 				target="_blank">Discord</a
 			>, submit your algs, and help us build the future of cubing together.
 		</p>
-
-		<p class="mt-12 text-sm text-gray-400">
-			© {new Date().getFullYear()} AlgArchive. Built with love for speedcubers.
-		</p>
 	</div>
 </section>

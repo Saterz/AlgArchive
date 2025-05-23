@@ -29,6 +29,11 @@
 	<div class="mx-auto max-w-6xl px-4">
 		<h1 class="mb-10 text-4xl font-bold">Browse Algorithms</h1>
 
+		<!-- Placeholder data disclaimer -->
+		<div class="mb-6 rounded bg-yellow-50 border border-yellow-200 px-4 py-3 text-yellow-800 text-sm">
+			Note: The algorithms shown below are placeholder data and do not reflect real database entries.
+		</div>
+
 		<!-- Filters (static for now) -->
 		<div class="mb-8 flex flex-wrap gap-4">
 			<button class="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium hover:bg-gray-200">

@@ -1,13 +1,4 @@
-<script lang="ts">
-	import { goto } from '$app/navigation';
-
-	function getStarted() {
-		goto('/browse');
-	}
-	function submitAlg() {
-		goto('/submit');
-	}
-</script>
+<script lang="ts"></script>
 
 <section class="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 pt-24 pb-32">
 	<div class="absolute inset-x-0 -top-40 -z-10 opacity-30 blur-3xl">
@@ -28,20 +19,21 @@
 		</p>
 
 		<div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-			<button
-				onclick={getStarted}
-				class="rounded-full bg-gray-900 px-8 py-3 cursor-pointer font-semibold text-white
+			<a
+				href="/browse"
+				class="cursor-pointer rounded-full bg-gray-900 px-8 py-3 font-semibold text-white
                        transition hover:bg-gray-700"
 			>
 				Browse Algorithms
-			</button>
-			<button
-				onclick={submitAlg}
-				class="rounded-full bg-white px-8 py-3 cursor-pointer font-semibold text-gray-900
+			</a>
+			<a
+				href="https://tally.so/r/wQyqEA"
+				class="cursor-pointer gap-4 rounded-full bg-white px-8 py-3 font-semibold text-gray-900
                        ring-1 ring-gray-300 transition hover:bg-gray-50"
 			>
-				Submit an Algorithm
-			</button>
+				<span class="pr-2">Submit an Algorithm</span>
+				<i class="fa-solid fa-up-right-from-square"></i>
+			</a>
 		</div>
 	</div>
 </section>
@@ -81,8 +73,8 @@
 				</div>
 				<h3 class="mb-2 text-xl font-semibold">Crowd-rated Difficulty</h3>
 				<p class="text-gray-600">
-					See at a glance which algorithms are beginner-friendly — and which ones demand finger-trick
-					mastery.
+					See at a glance which algorithms are beginner-friendly — and which ones demand
+					finger-trick mastery.
 				</p>
 			</div>
 
@@ -122,13 +114,13 @@
 		<p class="mx-auto mt-6 max-w-xl text-lg text-indigo-100">
 			Join thousands of cubers discovering faster, friendlier algorithms every day.
 		</p>
-		<button
-			onclick={getStarted}
-			class="mt-10 inline-flex items-center justify-center rounded-full
-                   bg-white px-10 py-4 text-lg cursor-pointer font-semibold text-indigo-700
+		<a
+			href="/signup"
+			class="mt-10 inline-flex cursor-pointer items-center justify-center
+                   rounded-full bg-white px-10 py-4 text-lg font-semibold text-indigo-700
                    transition hover:bg-indigo-50"
 		>
 			Get started
-	</button>
+		</a>
 	</div>
 </section>

@@ -34,6 +34,8 @@
 	},
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.0",
+		"@supabase/ssr": "^0.6.1",
+		"@supabase/supabase-js": "^2.49.7",
 		"@sveltejs/adapter-vercel": "^5.7.1",
 		"@vercel/analytics": "^1.5.0",
 		"drizzle-orm": "^0.40.0",

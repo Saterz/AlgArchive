@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
+	let isOpen = $state(false);
+
 	const leftLinks = [
 		{ href: '/browse', label: 'Browse' },
-		{ href: '/submit', label: 'Submit' },
+		{ href: 'https://tally.so/r/wQyqEA', label: 'Submit' },
 		{ href: '/learn', label: 'Learn' }
 	];
 
@@ -11,44 +13,72 @@
 		{ href: '/about', label: 'About' },
 		{ href: '/help', label: 'Help' }
 	];
-
-	function onStart() {
-		goto('/signup');
-	}
 </script>
 
-<nav class="w-full px-4 py-6 md:px-8">
-	<div class="mx-auto grid max-w-7xl grid-cols-3 items-center">
-		<ul class="hidden items-center space-x-10 font-medium text-gray-900 md:flex">
+<nav class="w-full bg-white px-4 py-6 shadow-md md:px-8">
+	<div class="mx-auto flex max-w-7xl items-center justify-between">
+		<!-- Left Links (Desktop) -->
+		<div class="hidden lg:flex items-center space-x-6">
 			{#each leftLinks as { href, label }}
-				<li>
-					<a {href} class="transition hover:text-gray-700">{label}</a>
-				</li>
+				<a {href} class="text-gray-700 transition hover:text-indigo-600">{label}</a>
 			{/each}
-		</ul>
+		</div>
 
-		<a href="/" class="font-boxing mx-auto flex flex-row items-center text-4xl"
-			><img src="/AlgArchive.png" alt="AlgArchive logo" class="h-28 w-28" />
-			<p class="text-indigo-600">Alg</p>
-			Archive</a
-		>
-
-		<div class="flex items-center justify-end space-x-10">
-			<ul class="hidden items-center space-x-10 font-medium text-gray-900 md:flex">
-				{#each rightLinks as { href, label }}
-					<li>
-						<a {href} class="transition hover:text-gray-700">{label}</a>
-					</li>
-				{/each}
-			</ul>
-
-			<button
-				onclick={onStart}
-				class="cursor-pointer rounded-full bg-gray-900 px-6 py-2 font-semibold
-                       text-white transition hover:bg-gray-700"
+		<!-- Logo -->
+		<a href="/" class="flex items-center space-x-2">
+			<div class="hidden lg:flex">
+				<img src="/AlgArchive.png" alt="AlgArchive logo" class="h-28 w-28" />
+			</div>
+			<span class="font-boxing text-4xl font-bold"
+				><span class="text-indigo-600">Alg</span>Archive</span
 			>
-				Get&nbsp;started
+		</a>
+
+		<!-- Right Links (Desktop) -->
+		<div class="hidden lg:flex items-center space-x-6">
+			{#each rightLinks as { href, label }}
+				<a {href} class="text-gray-700 transition hover:text-indigo-600">{label}</a>
+			{/each}
+			<a
+				href="/signup"
+				class="ml-4 rounded-full bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700"
+			>
+				Get Started
+			</a>
+		</div>
+
+		<!-- Mobile Hamburger -->
+		<div class="lg:hidden">
+			<button
+				onclick={() => {
+					isOpen = !isOpen;
+				}}
+				aria-label="Toggle menu"
+			>
+				{#if isOpen}
+					<i class="fa-solid fa-xmark fa-2x"></i>
+				{:else}
+					<i class="fa-solid fa-bars fa-2x"></i>
+				{/if}
 			</button>
 		</div>
 	</div>
+
+	<!-- Mobile Menu -->
+	{#if isOpen}
+		<div class="mt-4 space-y-2 px-4 md:hidden">
+			{#each leftLinks as { href, label }}
+				<a {href} class="block text-gray-700 transition hover:text-indigo-600">{label}</a>
+			{/each}
+			{#each rightLinks as { href, label }}
+				<a {href} class="block text-gray-700 transition hover:text-indigo-600">{label}</a>
+			{/each}
+			<a
+				href="/signup"
+				class="mt-2 w-full rounded-full bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700"
+			>
+				Get Started
+			</a>
+		</div>
+	{/if}
 </nav>
